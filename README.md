@@ -1,47 +1,51 @@
-## RTI CDS Frontend Developer Exercise
+# Triangle Ice Cream
+This is an app that builds a chart from data and uses d3.js to animate the graph. This app is more of an exercise to test out the d3.js library
+## Table of Contents
+- [Implementation](#implementation)
+- [Deployment](#deployment)
+- [Technologies](#technologies)
+- [License](#license)
+## Implementation
+To clone this repository you need [Git](https://git-scm.com/), [Node](https://nodejs.org/) and Node's package manager ([npm](https://www.npmjs.com/)) installed on your computer.
+### Dependencies
+```
+"dependencies": {
+    "d3": "^4.13.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.1"
+}
+```
+### Installation
+```bash
+# clone the repo
+$ git clone https://github.com/Ziwam/Census-chart.git
 
-Welcome to the RTI Center for Data Science front-end developer exercise! This exercise is here to get you acquainted with a small sample of what we do and for us to get acquainted with your skills. It should take no more than a few hours of your time.
+# go into the repo
+$ cd census-chart
 
-This exercise provides a CSV file with some data derived from the 1996 US Census. You will have to use that data to present several charts.
+# install the dependencies
+$ npm install
 
-----
+# start the app
+$ npm run start
+```
+## Deployment
+Create a development ready build be running.
+```bash
+$ npm run build
+```
+## Technologies
+This project includes:
+- [D3.js](https://d3js.org/)
+- [React](https://reactjs.org/)
 
-### Some guidance
+## License
+(MIT License)
+The MIT License (MIT) Copyright (c) 2018 Ziwa Mukungu zmukungu@gmail.com
 
-1. Fork this repository to your personal GitHub account and clone the fork to your computer.
-2. Save and commit your answers to your fork of the repository, and push them back to your personal GitHub account.
-3. Use the Internet as a resource to help you complete your work. We do it all the time.
-4. Comment your code so that when you look back at it in a year, you'll remember what you were doing.
-5. Use the tools you are comfortable with.
-   - We like to use [React](https://reactjs.org/) and [Vue](https://vuejs.org/) on our projects.
-   - Our preferred charting library is [D3](https://d3js.org/). We also use [Charts.js](http://www.chartjs.org/).
-6. Have fun and don't overthink it!
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-----
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### The Task
-
-1. Read the section below about **the data**.
-2. Make a visualization that shows the percentage of people who make above and below $50K for each education group. An example of how this could look:
-
-  ![example bar chart](example.png)
-
-3. Make the same visualization for race instead of education group.
-4. As a bonus, if you have time, combine the two on one chart.
-5. When done, commit your work to your clone of this repository. Add any instructions we need to build your work. Email us a link to your clone.
-
-----
-
-### The Data
-
-This repository contains a file called `census.csv`. 
-
-It contains a dataset that has 48842 US Census records with the following fields:
-
-- `age`: a continuous variable representing an individual's age
-- `education_level`: the highest level of education an individual received
-- `race`: an individual's race
-- `sex`: an individual's sex
-- `over_50k`: a boolean variable representing whether the individual makes over $50,000/year. A value of 1 means that the person makes greater than $50,000/year and a value of 0 means that the person makes less than or equal to $50,000/year.
-- `over_50k_text`: Same as `over_50k`, but using "True" and "False".
-- `count`: the number 1. This may be useful in calculations.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

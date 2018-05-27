@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Ziwam/frontend-dev-exercises.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "d3": "^4.13.0",
     "react": "^16.2.0",
